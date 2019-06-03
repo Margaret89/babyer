@@ -1,0 +1,63 @@
+/*-------------- Footer -----------------*/
+.footer-wrap{
+	background: #000;
+}
+
+.footer{
+	display: flex;
+	color: #fff;
+	padding: 60px 0;
+
+	&__journal{
+		margin-right: 60px;
+	}
+
+	&__content{
+		width: calc(100% - 222px);
+		text-align: center;
+	}
+
+	&__text{
+		@include font(normal, normal, 14px, 19px, #fff);
+		max-width: 425px;
+		margin: 48px auto 0;
+	}
+
+	.social-wrap{
+		margin-top: 73px;
+	}
+}
+
+.footer-menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	margin-top: -4px;
+	padding: 0;
+	list-style: none;
+
+	ul,
+	li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item,
+	&__link{
+		@include font(normal, normal, 20px, 20px, $color-grey);
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	&__item.current &__link,
+	&__item:hover &__link{
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	& &__item:not(:last-child){
+		margin-right: 28px;
+	}
+}

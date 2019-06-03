@@ -1,0 +1,128 @@
+﻿html,
+body{
+	background: #fff;
+	font-family: $font-greta;
+	@include font(normal, normal, 14px, 19px, $color-text);
+	box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: $color-blue;
+}
+
+a:hover,
+a:active,
+a:focus{
+	text-decoration: none;
+}
+
+p{
+	@include font(normal, normal, 14px, 19px, $color-text);
+	padding: 5px 0;
+}
+
+h1,
+.h1{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 34px, 34px, $color-text);
+	margin-bottom: 40px;
+}
+
+h2,
+.h2{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 20px, 24px, $color-text);
+	margin-bottom: 20px;
+}
+
+h3,
+.h3{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 18px, 20px, $color-text);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+h4,
+.h4{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 18px, 20px, $color-text);
+	margin-bottom: 10px;
+}
+
+h5,
+.h5{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 16px, 20px, $color-text);
+	margin-bottom: 0;
+}
+
+h6,
+.h6{
+	font-family: $font-bodoni;
+	@include font(normal, normal, 14px, 19px, $color-text);
+	margin-bottom: 0;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 1560px;
+	margin: 0 auto;
+}
+
+main{
+	flex: 1;
+	padding-bottom: 60px;
+}
+
+// .btn,
+// input[type="submit"].btn{
+// 	display: inline-block;
+// 	height: 38px;
+// 	background: $color-text;
+// 	border: 1px solid $color-text;
+// 	font-family: $font-helvetica;
+// 	@include font(normal, 500, 12px, 36px, #fff);
+// 	text-transform: uppercase;
+// 	padding: 0 20px;
+// 	text-align: center;
+// 	cursor: pointer;
+// 	text-decoration: none;
+// 	min-width: 200px;
+// }
+
+// .btn:hover,
+// input[type="submit"].btn:hover{
+// 	background: transparent;
+// 	color: $color-text;
+// }
+
+.code{
+	background-color: #f7f7f7;
+	border: 1px solid #e1e1e8;
+	color: #d14;
+	padding: 1px 4px;
+	display: inline-block;
+	font-family: monospace, arial;
+	border-radius: 3px;
+}
+
+.h-text-left{text-align: left !important;}
+.h-text-center{text-align: center !important;}
+.h-text-right{text-align: right !important;}
+.h-text-justify{text-align: justify !important;}
+.h-text-uppercase{text-transform: uppercase !important;}
+.h-text-bold {font-weight: 700 !important;}

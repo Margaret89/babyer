@@ -1,0 +1,74 @@
+/*-------------- fonts -----------------*/
+/* Greta Sans Pro */
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Bld.eot');
+	src: local('Greta Sans Pro Bold'), local('GretaSansPro-Bld'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Bld.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Bld.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Bld.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Bld.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Med.eot');
+	src: local('Greta Sans Pro Medium'), local('GretaSansPro-Med'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Med.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Med.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Med.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Med.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Reg.eot');
+	src: local('Greta Sans Pro'), local('GretaSansPro-Reg'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Reg.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Reg.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Reg.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Reg.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-SmBld.eot');
+	src: local('Greta Sans Pro SemiBold'), local('GretaSansPro-SmBld'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-SmBld.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-SmBld.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-SmBld.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-SmBld.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.eot');
+	src: local('Greta Sans Pro Thin'), local('GretaSansPro-Thin'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+/* Bodoni */
+@font-face {
+	font-family: 'Bodoni';
+	src: url('#{$path-fonts}/Bodoni/Bodoni72C.eot');
+	src: local('Bodoni'), local('Bodoni72C'),
+		url('#{$path-fonts}/Bodoni/Bodoni72C.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Bodoni/Bodoni72C.woff2') format('woff2'),
+		url('#{$path-fonts}/Bodoni/Bodoni72C.woff') format('woff'),
+		url('#{$path-fonts}/Bodoni/Bodoni72C.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

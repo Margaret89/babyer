@@ -1,0 +1,68 @@
+﻿/*----------- social -------------*/
+.social-wrap{
+	display: inline-flex;
+	align-items: center;
+}
+
+.social{
+	display: inline-flex;
+	align-items: center;
+	border-right: 1px solid #f5f5f5;
+
+	&__item{
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin-right: 6px;
+	}
+
+	&__item--in{background: url(#{$path-img}/ic-in.svg) no-repeat center;}
+	&__item--fb{background: url(#{$path-img}/ic-fb.svg) no-repeat center;}
+
+	&__item--in:hover{background-image: url(#{$path-img}/ic-in-color.svg);}
+	&__item--fb:hover{background: url(#{$path-img}/ic-fb-color.svg) no-repeat center;}
+}
+
+.switch-lang{
+	margin-left: 4px;
+	position: relative;
+
+	&__cur{
+		@include font(normal, bold, 14px, 14px, #F5F5F5);
+		text-transform: uppercase;
+		padding: 0 3px;
+		cursor: pointer;
+	}
+
+	&__cur:hover{
+		color: #fff;
+	}
+
+	&__list{
+		display: none;
+		padding: 5px;
+		background: #fff;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 10;
+	}
+
+	&__item{
+		@include font(normal, bold, 14px, 14px, $color-text);
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 10px;
+	}
+
+	&__item:hover{
+		color: $color-grey-dark;
+	}
+
+	&:hover &__list{
+		display: block;
+	}
+}
