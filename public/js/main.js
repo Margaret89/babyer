@@ -1,4 +1,11 @@
 $(document).ready(function () {
+	$('.js-lang-item').click(function(){
+		var curVal = $(this).parents('.js-lang-list').siblings('.js-lang-cur').text();
+		var checkVal = $(this).text();
+		$('.js-lang-cur').text(checkVal);
+		$('.js-lang-item').text(curVal);
+		$('.js-lang-item').data('lang',curVal);
+	});
 
 	
 	// //---------- Маска для телефона -------------
