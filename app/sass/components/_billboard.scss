@@ -1,1 +1,56 @@
 ﻿/*----------- billboard -------------*/
+.billboard-wrap{
+	margin-top: 53px;
+}
+
+.billboard-list{
+	&__item{
+		text-align: center;
+		text-decoration: none;
+	}
+
+	&__img{
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		height: 365px;
+		background-color: #575757;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+
+	&__img::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease 0s;
+	}
+
+	&__item:hover &__img::after{
+		opacity: 1;
+	}
+
+	&__date{
+		@include font(normal, 200, 16px, 19px, $color-pink);
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-top: 15px;
+	}
+
+	&__name{
+		@include font(normal, 500, 14px, 16px, $color-text);
+		margin-top: 7px;
+	}
+
+	&__author{
+		@include font(normal, normal, 14px, 16px, $color-text);
+	}
+}

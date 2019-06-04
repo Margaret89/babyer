@@ -160,11 +160,11 @@
 	}
 
 	&__sub-item:not(:last-child){
-		margin-bottom: 8px;
+		padding-bottom: 8px;
 	}
 
-	&__sub-item.current &__sub-link,
-	&__sub-item:hover &__sub-link{
+	&__sub-link.current,
+	&__sub-link:hover {
 		color: $color-grey-dark;
 		text-decoration: underline;
 	}

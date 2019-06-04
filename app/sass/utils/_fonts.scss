@@ -50,12 +50,36 @@
 
 @font-face {
 	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Hea.eot');
+	src: local('Greta Sans Pro Heavy'), local('GretaSansPro-Hea'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Hea.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Hea.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Hea.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Hea.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
 	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.eot');
 	src: local('Greta Sans Pro Thin'), local('GretaSansPro-Thin'),
 		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.eot?#iefix') format('embedded-opentype'),
 		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.woff2') format('woff2'),
 		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.woff') format('woff'),
 		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greta Sans Pro';
+	src: url('#{$path-fonts}/GretaSansPro/GretaSansPro-Lt.eot');
+	src: local('Greta Sans Pro Light'), local('GretaSansPro-Lt'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Lt.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Lt.woff2') format('woff2'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Lt.woff') format('woff'),
+		url('#{$path-fonts}/GretaSansPro/GretaSansPro-Lt.ttf') format('truetype');
 	font-weight: 200;
 	font-style: normal;
 }
