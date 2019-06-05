@@ -47,3 +47,23 @@
 		margin-top: 10px;
 	}
 }
+
+@media (max-width: 767px) {
+	.team-main{
+		margin-bottom: 50px;
+	}
+
+	.team-list{
+		&__item{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.team-list{
+		&__img{
+			height: 200px;
+		}
+	}
+}

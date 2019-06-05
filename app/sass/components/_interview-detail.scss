@@ -35,3 +35,23 @@
 		margin: 55px 0 35px;
 	}
 }
+
+@media (max-width: 767px) {
+	.interview-detail{
+		&__img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__author{
+			font-size: 34px;
+			line-height: 34px
+		}
+
+		&__slogan{
+			font-size: 20px;
+			line-height: 24px
+		}
+	}
+}

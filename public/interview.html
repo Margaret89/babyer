@@ -7,41 +7,45 @@
 		<title>Интервью</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/hamburger.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body class="js-body">
 		<div class="wrapper">
+			<div class="shadow-site d-md-none js-shadow"></div>
 			<header class="header-wrap" id="header">
 				<div class="container">
 					<div class="row">
 						<div class="col-8">
 							<div class="header">
+								<span class="ic-hamburger js-open-menu"><span></span></span>
+				
 								<div class="header__logo"><a href="/"><img src="img/logo.svg" alt=""></a></div>
-			
-								<nav class="header__nav">
+				
+								<nav class="header__nav d-none d-md-block">
 									<ul class="top-menu">
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Герои</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Слово детям</a></li>
-										<li class="top-menu__item">
-											<a href="#" class="top-menu__link">Звезды</a>
-											<ul class="top-menu__sub">
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Герои</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Слово детям</a></li>
+										<li class="top-menu__item js-top-menu-item">
+											<a href="#" class="top-menu__link js-top-menu-link">Звезды</a>
+											<ul class="top-menu__sub js-top-menu-sub">
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Интервью со звездой</a></li>
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Скоро мама</a></li>
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Искусство</a></li> 
 											</ul>
 										</li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Мода</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Стиль жизни</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">О нас</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Мода</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Стиль жизни</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">О нас</a></li>
 									</ul>
 								</nav>
-			
-								<div class="social-wrap">
+				
+								<div class="social-wrap d-none d-md-inline-flex">
 									<span class="social">
 										<a href="https://www.instagram.com/babyermagazine/" target="_blank" class="social__item social__item--in"></a>
 										<a href="#" target="_blank" class="social__item social__item--fb"></a>
 									</span>
-			
+				
 									<span class="switch-lang">
 										<span class="switch-lang__cur js-lang-cur">Ru</span>
 										<span class="switch-lang__list js-lang-list">
@@ -53,6 +57,46 @@
 						</div>
 					</div>
 				</div>
+				
+				<div class="mobile-menu js-mobile-menu d-md-none">
+					<div class="mobile-menu__head">
+						<span class="ic-hamburger active js-close-menu"><span></span></span>
+				
+						<span class="switch-lang">
+							<span class="switch-lang__cur js-lang-cur">Ru</span>
+							<span class="switch-lang__list js-lang-list">
+								<span class="switch-lang__item js-lang-item" data-lang="En">En</span>
+							</span>
+						</span>
+					</div>
+				
+					<div class="mobile-menu__content js-mobile-menu-content">
+						<ul class="top-menu">
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Герои</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Слово детям</a></li>
+							<li class="top-menu__item js-top-menu-item">
+								<a href="#" class="top-menu__link js-top-menu-link">Звезды</a>
+								<ul class="top-menu__sub js-top-menu-sub">
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Интервью со звездой</a></li>
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Скоро мама</a></li>
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Искусство</a></li> 
+								</ul>
+							</li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Мода</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Стиль жизни</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">О нас</a></li>
+						</ul>
+					
+						<span class="social">
+							<a href="https://www.instagram.com/babyermagazine/" target="_blank" class="social__item social__item--in"></a>
+							<a href="#" target="_blank" class="social__item social__item--fb"></a>
+						</span>
+				
+						<div class="mobile-menu__logo">
+							<a href="/"><img src="img/logo.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
 			</header>
 			<div id="position-fixedmenu"></div>
 			<main>
@@ -61,18 +105,18 @@
 				<section class="interview-main">
 					<div class="container">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-md-4">
 								<div class="interview-main__img"><img src="img/interview.jpg" alt=""></div>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<div class="interview-main__head">
 									<div class="interview-main__author"><a href="#">Артур Райнис</a></div>
 									<div class="interview-main__slogan"><a href="#">«музыка — моё вдохновение»</a></div>
 								</div>
 
 								<div class="row">
-									<div class="col-4 offset-2">
+									<div class="col-lg-6 col-xl-4 offset-lg-1 offset-xl-2">
 										<div class="interview-main__text">Главный признак таланта — когда человек знает, чего он хочет. Наш герой — солист музыкального коллектива «Непоседы», певец, музыкант, обладатель музыкальных премий и просто невероятно обаятельный и жизнерадостный парень Артур Райнис — в свои 10 лет, без сомнений, знает всё о своём призвании и уверенно идёт к своей цели. Свой багаж достижений он отлично дополняет своим трудом и стремлением быть лучшим даже в увлечениях: он профессионально играет в гольф, для души играет на рояле, а в свободное время с успехом снимает ролики для собственного YouTube-канала. Согласитесь, есть о чём поговорить с таким парнем?</div>
 									</div>
 								</div>
@@ -84,83 +128,99 @@
 				<section class="materials">
 					<div class="container">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Вышел клип на песню </div>
+										<div class="materials__text">Вышел клип на песню </div>
+									</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Вышел клип на песню </div>
+										<div class="materials__text">Вышел клип на песню </div>
+									</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Вышел клип на песню </div>
+										<div class="materials__text">Вышел клип на песню </div>
+									</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										<div class="materials__text">Коллекция десертов от Анны Седоковой и кондитерской «Любовь и сладости»</div>
+										</div>
 								</article>
 							</div>
 
-							<div class="col-4">
+							<div class="col-md-4">
 								<article class="materials__item">
 									<a href="#" class="materials__img" style="background-image: url(img/materials.jpg);"></a>
 
-									<div class="materials__name"><a href="#">Новости</a></div>
+									<div class="materials__content">
+										<div class="materials__name"><a href="#">Новости</a></div>
 
-									<div class="materials__text">Вышел клип на песню </div>
+										<div class="materials__text">Вышел клип на песню </div>
+									</div>
 								</article>
 							</div>
 						</div>
@@ -170,9 +230,9 @@
 			<footer class="footer-wrap">
 				<div class="container">
 					<div class="row">
-						<div class="col-6 offset-1">
+						<div class="col-md-6 offset-md-1">
 							<div class="footer">
-								<a href="#" class="footer__journal"><img src="img/footer-journal.jpg" alt=""></a>
+								<a href="#" class="footer__journal d-none d-md-block"><img src="img/footer-journal.jpg" alt=""></a>
 			
 								<div class="footer__content">
 									<nav class="footer__nav">

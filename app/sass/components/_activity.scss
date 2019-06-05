@@ -1,10 +1,15 @@
 ﻿/*----------- activity -------------*/
 .activity-wrap{
 	margin-top: 25px;
-	margin-bottom: 82px;
+	margin-bottom: 42px;
 }
 
 .activity-list{
+	&__item{
+		max-width: 280px;
+		margin: 0 auto 40px;
+	}
+
 	&__img{
 		display: inline-block;
 		vertical-align: top;
@@ -54,5 +59,31 @@
 	&__date{
 		@include font(normal, normal, 14px, 14px, $color-text);
 		margin-top: 33px;
+	}
+}
+
+@media (max-width: 767px) {
+	.activity-wrap{
+		margin-top: 15px;
+		margin-bottom: 60px;
+	}
+
+	.activity-list{
+		&__img{
+			height: 163px;
+		}
+
+		&__name,
+		&__name a{
+			font-size: 14px;
+		}
+
+		&__name{
+			margin-top: 15px;
+		}
+
+		&__date{
+			margin-top: 20px;
+		}
 	}
 }

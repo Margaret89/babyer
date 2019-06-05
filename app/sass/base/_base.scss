@@ -6,6 +6,12 @@ body{
 	box-sizing:border-box;
 }
 
+body.no-scroll{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -95,28 +101,6 @@ main{
 	padding-top: 45px;
 }
 
-// .btn,
-// input[type="submit"].btn{
-// 	display: inline-block;
-// 	height: 38px;
-// 	background: $color-text;
-// 	border: 1px solid $color-text;
-// 	font-family: $font-helvetica;
-// 	@include font(normal, 500, 12px, 36px, #fff);
-// 	text-transform: uppercase;
-// 	padding: 0 20px;
-// 	text-align: center;
-// 	cursor: pointer;
-// 	text-decoration: none;
-// 	min-width: 200px;
-// }
-
-// .btn:hover,
-// input[type="submit"].btn:hover{
-// 	background: transparent;
-// 	color: $color-text;
-// }
-
 .code{
 	background-color: #f7f7f7;
 	border: 1px solid #e1e1e8;
@@ -137,4 +121,36 @@ main{
 #position-fixedmenu{
 	position: absolute;
 	top: 150px;
+}
+
+.shadow-site{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 99;
+}
+
+.shadow-site.is-visible{
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.container{
+		width: 100%!important;
+	}
+
+	h1,
+	.h1{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 23px;
+	}
+
+	.head-site{
+		margin-bottom: 40px;
+	}
 }

@@ -24,3 +24,13 @@
 .distribution + .distribution{
 	margin-top: -20px;
 }
+
+@media (max-width: 767px) {
+	.distribution{
+		margin-top: 0;
+		
+		&__item{
+			margin-bottom: 65px;
+		}
+	}
+}

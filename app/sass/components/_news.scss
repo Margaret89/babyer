@@ -9,6 +9,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 100%;
+		max-width: 580px;
 		height: 280px;
 		background-color: #575757;
 		background-repeat: no-repeat;
@@ -54,5 +55,32 @@
 		@include font(normal, 500, 20px, 24px, $color-text);
 		max-width: 490px;
 		margin: 12px auto 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.news-list{
+		&__item{
+			margin-bottom: 53px;
+		}
+		
+		&__img{
+			height: 163px;
+		}
+
+		&__name{
+			margin-top: 15px;
+		}
+
+		&__name,
+		&__name a{
+			font-size: 14px;
+		}
+
+		&__text{
+			font-size: 16px;
+			line-height: 19px;
+			margin-top: 7px;
+		}
 	}
 }

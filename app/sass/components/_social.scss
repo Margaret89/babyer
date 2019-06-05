@@ -66,3 +66,13 @@
 		display: block;
 	}
 }
+
+@media (max-width: 767px) {
+	.switch-lang{
+		&__cur,
+		&__item{
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
+}

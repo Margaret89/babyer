@@ -33,3 +33,28 @@
 		@include font(normal, 500, 14px, 19px, $color-text);
 	}
 }
+
+@media (max-width: 767px) {
+	.interview-main{
+		&__img{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&__head{
+			margin-bottom: 45px;
+		}
+
+		&__author,
+		&__author a{
+			font-size: 34px;
+			line-height: 34px;
+		}
+
+		&__slogan,
+		&__slogan a{
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}

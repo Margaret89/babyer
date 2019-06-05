@@ -60,3 +60,50 @@
 .news-list + .materials{
 	margin-top: 120px;
 }
+
+@media (max-width: 767px) {
+	.materials{
+		&__item{
+			display: flex;
+			margin-bottom: 45px;
+		}
+
+		&__img,
+		&__content{
+			width: 50%
+		}
+
+		&__img{
+			height: 105px;
+		}
+
+		&__content{
+			padding-left: 20px;
+		}
+
+		&__name,
+		&__name a{
+			font-size: 14px;
+			margin-top: 0;
+		}
+
+		&__text{
+			font-size: 14px;
+			line-height: 16px;
+			margin-top: 7px;
+		}
+
+		.row .col-md-4:nth-child(odd) &__img{
+			order: 2;
+		}
+
+		.row .col-md-4:nth-child(odd) &__content{
+			padding-left: 0;
+			padding-right: 20px;
+		}
+	}
+
+	.news-list + .materials{
+		margin-top: 40px;
+	}
+}

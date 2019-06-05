@@ -7,41 +7,45 @@
 		<title>Журналы</title>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/hamburger.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body class="js-body">
 		<div class="wrapper">
+			<div class="shadow-site d-md-none js-shadow"></div>
 			<header class="header-wrap" id="header">
 				<div class="container">
 					<div class="row">
 						<div class="col-8">
 							<div class="header">
+								<span class="ic-hamburger js-open-menu"><span></span></span>
+				
 								<div class="header__logo"><a href="/"><img src="img/logo.svg" alt=""></a></div>
-			
-								<nav class="header__nav">
+				
+								<nav class="header__nav d-none d-md-block">
 									<ul class="top-menu">
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Герои</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Слово детям</a></li>
-										<li class="top-menu__item">
-											<a href="#" class="top-menu__link">Звезды</a>
-											<ul class="top-menu__sub">
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Герои</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Слово детям</a></li>
+										<li class="top-menu__item js-top-menu-item">
+											<a href="#" class="top-menu__link js-top-menu-link">Звезды</a>
+											<ul class="top-menu__sub js-top-menu-sub">
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Интервью со звездой</a></li>
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Скоро мама</a></li>
 												<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Искусство</a></li> 
 											</ul>
 										</li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Мода</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">Стиль жизни</a></li>
-										<li class="top-menu__item"><a href="#" class="top-menu__link">О нас</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Мода</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Стиль жизни</a></li>
+										<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">О нас</a></li>
 									</ul>
 								</nav>
-			
-								<div class="social-wrap">
+				
+								<div class="social-wrap d-none d-md-inline-flex">
 									<span class="social">
 										<a href="https://www.instagram.com/babyermagazine/" target="_blank" class="social__item social__item--in"></a>
 										<a href="#" target="_blank" class="social__item social__item--fb"></a>
 									</span>
-			
+				
 									<span class="switch-lang">
 										<span class="switch-lang__cur js-lang-cur">Ru</span>
 										<span class="switch-lang__list js-lang-list">
@@ -50,6 +54,46 @@
 									</span>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mobile-menu js-mobile-menu d-md-none">
+					<div class="mobile-menu__head">
+						<span class="ic-hamburger active js-close-menu"><span></span></span>
+				
+						<span class="switch-lang">
+							<span class="switch-lang__cur js-lang-cur">Ru</span>
+							<span class="switch-lang__list js-lang-list">
+								<span class="switch-lang__item js-lang-item" data-lang="En">En</span>
+							</span>
+						</span>
+					</div>
+				
+					<div class="mobile-menu__content js-mobile-menu-content">
+						<ul class="top-menu">
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Герои</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Слово детям</a></li>
+							<li class="top-menu__item js-top-menu-item">
+								<a href="#" class="top-menu__link js-top-menu-link">Звезды</a>
+								<ul class="top-menu__sub js-top-menu-sub">
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Интервью со звездой</a></li>
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Скоро мама</a></li>
+									<li class="top-menu__sub-item"><a href="#" class="top-menu__sub-link">Искусство</a></li> 
+								</ul>
+							</li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Мода</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">Стиль жизни</a></li>
+							<li class="top-menu__item js-top-menu-item"><a href="#" class="top-menu__link js-top-menu-link">О нас</a></li>
+						</ul>
+					
+						<span class="social">
+							<a href="https://www.instagram.com/babyermagazine/" target="_blank" class="social__item social__item--in"></a>
+							<a href="#" target="_blank" class="social__item social__item--fb"></a>
+						</span>
+				
+						<div class="mobile-menu__logo">
+							<a href="/"><img src="img/logo.svg" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -91,7 +135,7 @@
 						</div>
 
 						<div class="row">
-							<div class="col-4 offset-2">
+							<div class="col-lg-4 offset-lg-2">
 								<div class="journal__text">
 									По статистике, сегодня в России растут 2–3% высокоодарённых детей от общего числа детей в нашей стране и 25% талантливых детей в различных областях. Приятно видеть, что наше государство и коммерческие организации поддерживают их достижения и создают широкие возможности для их развития и продвижения. Талантливые дети — это, несомненно, не только радость и гордость их родителей, но и настоящее сокровище нации, её достояние и наше с вами счастливое будущее. За последний месяц наш журнал стал информационным партнёром нескольких серьёзных премий в области детских достижений, большая заслуга в которых — это, конечно, заслуга родителей таких детей, которые отдают все свои силы и время для их всестороннего развития. Совсем не важно, в чём ребёнок проявил себя: в математике, физике, астрономии, музыке, живописи или спорте. Важно то, что родители проложили его путь в большое будущее и поддержали его начинания, а он уверенно идёт к своей цели и каждый день доказывает это своим трудом. Именно такое отношение к любимому делу у нашего героя — яркого, весёлого, харизматичного парня, в свои одиннадцать уже настоящего артиста — Артура Райниса @arturrainis.<br>
 									Многие наши взрослые герои вспоминают на страницах нашего журнала своё детство. У всех оно было разным, но все они когда-то сделали на шаг больше и проявили терпение на час дольше других, и сегодня мы гордимся их большими успехами. Сегодня и они сами поддерживают различные детские проекты и не остаются в стороне от их судеб. Спасибо заслуженному художнику РФ Никасу Сафронову @ safronov_nikas за искренность и большой вклад в поддержку детей; всенародно любимому гениальному дизайнеру Игорю Гуляеву @igorgulyaevofficial за откровенность, ценные советы и достойный пример отношения к профессии и к родителям для всей нашей сегодняшней молодёжи; прославленной российской спортсменке, мастеру спорта международного класса Марии Комиссаровой @chaadaeva_maria за яркий пример силы воли, любви к жизни, веры в лучшее и самоотверженности; и невероятно обаятельной, талантливой актрисе, продюсеру Анне Песковой @anna.peskova — за раскрытие секретов счастья и готовность поделиться им со всеми нами.<br>
@@ -132,9 +176,9 @@
 			<footer class="footer-wrap">
 				<div class="container">
 					<div class="row">
-						<div class="col-6 offset-1">
+						<div class="col-md-6 offset-md-1">
 							<div class="footer">
-								<a href="#" class="footer__journal"><img src="img/footer-journal.jpg" alt=""></a>
+								<a href="#" class="footer__journal d-none d-md-block"><img src="img/footer-journal.jpg" alt=""></a>
 			
 								<div class="footer__content">
 									<nav class="footer__nav">

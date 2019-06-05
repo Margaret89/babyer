@@ -116,39 +116,51 @@ $(document).ready(function () {
 		});
 	}
 	
+	// Открыть/Закрыть мобильное меню
+	$('.js-open-menu').click(function(){
+		$('.js-shadow').addClass('is-visible');
+		$('.js-mobile-menu').addClass('open');
+		$('.js-body').addClass('no-scroll');
+	});
 
-	
-	// //---------- Маска для телефона -------------
-	// $.mask.definitions['~'] = "[+-]";
-	// $("#phone").mask("(999) 999-9999");
+	$('.js-close-menu').click(function(){
+		 closeCatMenu();
+	});
 
-	// // Вызов функции подгрузки изображений
-	// loadBigImg();
-	// loadBigBacground();
+	$('.js-shadow').click(function(){
+		closeCatMenu();
+	});
 
-	// // Вызов функции прижатия футера к низу экрана
-	// footerBind('.js-main','.js-header,.js-footer');
-	// $(window).on('resize',function(){footerBind('.js-main','.js-header,.js-footer')});
+	function closeCatMenu() {
+		$('.js-shadow').removeClass('is-visible');
+		$('.js-mobile-menu').removeClass('open');
+		$('.js-body').removeClass('no-scroll');
+	}
+
+	// Перемещение мобильного меню
+	$('.js-top-menu-sub').each(function(indx, element){
+		var curheadSect = $(this).siblings('.js-top-menu-link').text();
+
+		$(this).prepend('<li class="top-menu__sub-item"><span class="top-menu__sub-back js-menu-back">'+curheadSect+'</span></li>');
+	});
+	var indentMenu = 0;
+	var levelMenu = 0;
+
+	$('.js-top-menu-link').on("click", function(event){
+		event.preventDefault();
+		indentMenu = indentMenu - 100;
+		levelMenu++;
+
+		$('.js-mobile-menu-content').css('transform','translateX('+indentMenu+'%)');
+	});
+
+	$('.js-menu-back').on("click", function(event){
+		indentMenu = indentMenu + 100;
+		levelMenu--;
+
+		$('.js-mobile-menu-content').css('transform','translateX('+indentMenu+'%)');
+	});
 });
-
-// // Загрузка больших изображений
-// function loadBigImg() {
-// 	var $imgDefer = $('[data-src]');
-
-// 	$imgDefer.each(function(indx, element){
-// 		var urlImgBig = $(this).attr("data-src");
-// 		$(this).attr("src", urlImgBig);
-// 	});
-// }
-
-// function loadBigBacground() {
-// 	var $imgDefer = $('[data-background]');
-
-// 	$imgDefer.each(function(indx, element){
-// 		var urlBackgroundBig = $(this).attr("data-background");
-// 		$(this).css("background-image", "url("+ urlBackgroundBig +")");
-// 	});
-// }
 
 //-------------- Fixed Menu ---------------------
 function showHeaderScroll(selPos,fixedMenu){
