@@ -2,7 +2,7 @@
 body{
 	background: #fff;
 	font-family: $font-greta;
-	@include font(normal, normal, 14px, 19px, $color-text);
+	@include font(normal, normal, 14px, 16px, $color-text);
 	box-sizing:border-box;
 }
 
@@ -17,24 +17,25 @@ img{
 }
 
 a{
-	color: $color-blue;
+	color: $color-grey-dark;
 }
 
 a:hover,
 a:active,
 a:focus{
-	text-decoration: none;
+	color: $color-blue;
 }
 
 p{
-	@include font(normal, normal, 14px, 19px, $color-text);
-	padding: 5px 0;
+	@include font(normal, normal, 14px, 16px, $color-text);
+	padding: 8px 0;
+	margin: 0;
 }
 
 h1,
 .h1{
 	font-family: $font-bodoni;
-	@include font(normal, normal, 34px, 34px, $color-text);
+	@include font(normal, normal, 34px, 40px, $color-text);
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -73,6 +74,10 @@ h6,
 	font-family: $font-bodoni;
 	@include font(normal, normal, 14px, 19px, $color-text);
 	margin-bottom: 0;
+}
+
+.head-site{
+	margin-bottom: 60px;
 }
 
 .wrapper{
@@ -127,4 +132,9 @@ main{
 .h-text-right{text-align: right !important;}
 .h-text-justify{text-align: justify !important;}
 .h-text-uppercase{text-transform: uppercase !important;}
-.h-text-bold {font-weight: 700 !important;}
+.h-text-bold {font-weight: bold !important;}
+
+#position-fixedmenu{
+	position: absolute;
+	top: 150px;
+}

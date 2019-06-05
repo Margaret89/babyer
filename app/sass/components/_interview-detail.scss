@@ -1,0 +1,37 @@
+﻿/*----------- interview-detail -------------*/
+.interview-detail{
+	&__head{
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	&__label{
+		@include font(normal, 200, 16px, 19px, $color-pink);
+		text-transform: uppercase;
+		margin-bottom: 18px;
+	}
+
+	&__author{
+		font-family: $font-bodoni;
+		@include font(normal, normal, 56px, 50px, $color-text);
+		text-decoration: none;
+	}
+
+	&__slogan{
+		font-family: $font-bodoni;
+		@include font(normal, normal, 24px, 24px, $color-text);
+		text-decoration: none;
+		margin-top: 22px;
+	}
+
+	&__text{
+		@include font(normal, 500, 14px, 19px, $color-text);
+		padding: 23px 0 35px;
+		border-top: 1px solid #dcdcdc;
+		border-bottom: 1px solid #dcdcdc;
+	}
+
+	&__img{
+		margin: 55px 0 35px;
+	}
+}

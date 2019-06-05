@@ -1,0 +1,9 @@
+﻿/*----------- contacts -------------*/
+.contacts{
+	@include font(normal, normal, 22px, 25px, $color-text);
+	text-align: center;
+
+	&__item:not(:last-child){
+		margin-bottom: 30px;
+	}
+}

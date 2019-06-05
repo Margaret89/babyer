@@ -1,0 +1,17 @@
+﻿/*----------- partner -------------*/
+.partner{
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0 140px;
+	}
+	
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 280px;
+		text-align: center;
+		margin: 0 10px 30px;
+	}
+}

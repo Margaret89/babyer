@@ -1,0 +1,17 @@
+﻿/*----------- news-detail -------------*/
+.news-detail{
+	&__head{
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	&__label{
+		@include font(normal, 200, 16px, 19px, $color-blue);
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__img{
+		margin: 8px 0 40px;
+	}
+}

@@ -28,6 +28,10 @@
 		opacity: 1;
 	}
 
+	&__item:not(:last-child){
+		margin-bottom: 100px;
+	}
+
 	&__head{
 		@include font(normal, 800, 64px, 60px, #fff);
 		text-transform: uppercase;

@@ -1,0 +1,35 @@
+﻿/*----------- interview-main -------------*/
+.interview-main{
+	margin-bottom: 140px;
+	
+	&__head{
+		text-align: center;
+		margin-bottom: 90px;
+		margin-top: 15px;
+	}
+
+	&__author,
+	&__author a{
+		font-family: $font-bodoni;
+		@include font(normal, normal, 56px, 50px, $color-text);
+		text-decoration: none;
+	}
+
+	&__slogan,
+	&__slogan a{
+		font-family: $font-bodoni;
+		@include font(normal, normal, 24px, 24px, $color-text);
+		text-decoration: none;
+		margin-top: 22px;
+	}
+
+	&__author a:hover,
+	&__slogan a:hover{
+		color: $color-grey-dark;
+		text-decoration: underline;
+	}
+
+	&__text{
+		@include font(normal, 500, 14px, 19px, $color-text);
+	}
+}

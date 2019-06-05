@@ -1,0 +1,34 @@
+﻿/*----------- quote -------------*/
+.quote{
+	@include font(normal, 200, 14px, 21px, #2b2e34);
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 260px;
+	padding: 25px 20px;
+	border-top: 1px solid #2B2E34;
+	border-bottom: 1px solid #2B2E34;
+	position: relative;
+	margin: 30px auto;
+
+	&::before,
+	&::after{
+		content: '';
+		display: inline-block;
+		width: 38px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&::before{
+		background: #fff url(#{$path-img}/quote-up.svg) no-repeat center;
+		top: -14px;
+	}
+
+	&::after{
+		background: #fff url(#{$path-img}/quote-down.svg) no-repeat center;
+		bottom: -14px;
+	}
+}
