@@ -1,0 +1,49 @@
+﻿/*----------- team -------------*/
+.team-main{
+	margin-bottom: 120px;
+
+	&__name{
+		@include font(normal, normal, 36px, 34px, $color-text);
+		text-align: center;
+	}
+
+	&__post{
+		@include font(normal, normal, 16px, 19px, $color-text);
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	&__text{
+		@include font(normal, normal, 14px, 16px, $color-text);
+		margin-top: 40px;
+	}
+}
+
+.team-list{
+	&__item{
+		margin-bottom: 120px;
+		max-width: 234px;
+	}
+
+	&__img{
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		height: 338px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 20px;
+	}
+
+	&__name{
+		@include font(normal, normal, 16px, 19px, $color-text);
+		text-align: center;
+	}
+
+	&__text{
+		@include font(normal, normal, 12px, 13px, $color-text);
+		margin-top: 10px;
+	}
+}

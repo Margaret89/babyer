@@ -1,0 +1,59 @@
+﻿/*----------- journal -------------*/
+.journal-slider {
+	height:500px;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	max-width: 100%;
+	margin: 0 auto 125px;
+}
+
+.journal-slider img {
+	visibility:hidden;
+	cursor:pointer;
+}
+
+.journal-slider a .carousel-center{
+	cursor: pointer;
+}
+
+.journal-slider .journal-slider__item > .carousel-center{
+	cursor: auto;
+}
+
+.journal-slider__pager a{
+	position: absolute;
+	top: 50%;
+	width: 66px;
+	height: 66px;
+	margin-top: -33px;
+	outline: 0;
+	text-indent: -9999px;
+	z-index: 10;
+	background-repeat: no-repeat;
+}
+
+.journal-slider__next{
+	background-position: 0 0;
+	left: 0;
+}
+
+.journal-slider__next:hover{
+	background-position: 0 -80px;
+}
+
+.journal-slider__prev{
+	background-position: -80px 0;
+	right: 0;
+}
+
+.journal-slider__prev:hover{
+	background-position: -80px -80px;
+}
+
+.journal{
+	&__text{
+		line-height: 19px;
+		margin-bottom: 85px;
+	}
+}

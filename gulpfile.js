@@ -30,7 +30,7 @@ gulp.task('sass', done => {
 	gulp.src(paths.sass_src)
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(autoprefixer({
-			browsers: ['last 3 versions'],
+			overrideBrowserslist: ['last 3 versions'],
 			cascade: false
 		}))
 		// .pipe(minifyCss({compatibility: 'ie8'}))
